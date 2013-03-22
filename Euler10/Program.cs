@@ -13,14 +13,8 @@ namespace Euler10
             int size = 2000000;
             var s = new Sieve(size);
 
-            long count = 0;
-
             foreach (int prime in s.GetPrimes())
-                count += prime;
-
-            Console.Write(count);
-
-            Console.ReadLine();
+                Console.WriteLine(prime);
         }
     }
 }
